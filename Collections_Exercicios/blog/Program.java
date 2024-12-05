@@ -2,7 +2,7 @@
 
     public class Program {
         public static void main(String[] args) {
-            Blog blog1 = new Blog();
+            Blog1 blog1 = new Blog1();
 
             Post post1 = new Post("John Bannons", 
                 "Como implementar Terraform",

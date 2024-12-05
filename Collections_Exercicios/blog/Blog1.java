@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Blog {
+public class Blog1 {
 	 private List<Post> posts;
 
-    public Blog() {
+    public Blog1() {
         posts = new ArrayList<Post>();
     }
 
