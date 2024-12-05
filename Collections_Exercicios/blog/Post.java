@@ -26,4 +26,4 @@ public class Post {
     public String getCategoria() {
         return categoria;
     }
-}
+} 
