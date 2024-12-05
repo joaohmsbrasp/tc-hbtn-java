@@ -1,8 +1,8 @@
  import java.util.*;
 
-    public class Program {
+    public class Program1 {
         public static void main(String[] args) {
-            Blog1 blog1 = new Blog1();
+            Blog blog1 = new Blog();
 
             Post post1 = new Post("John Bannons", 
                 "Como implementar Terraform",
