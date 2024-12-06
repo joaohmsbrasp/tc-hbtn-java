@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="Heranca_Exercicios/resumo_pedido"/>
+	<classpathentry kind="src" path="Interfaces_Exercicios/workflow"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="Collections_Exercicios/classes"/>
 </classpath>
