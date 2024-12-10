@@ -25,9 +25,7 @@ public class Program {
         );
 
         System.out.println(pessoas1);
-        System.out.println();
         System.out.println(pessoas2);
-        System.out.println();
         System.out.println(pessoas3);
     }
 }
