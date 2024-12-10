@@ -1,3 +1,6 @@
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class Pessoa implements Comparable {
     private int codigo;
     private String nome;
@@ -35,8 +38,9 @@ public class Pessoa implements Comparable {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d R$ %f", getCodigo(),
-            getNome(), getCargo(), getIdade(), getSalario());
+        NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("pt", "BR"));
+        return String.format("[%d] %s %s %d %s", 
+            getCodigo(), getNome(), getCargo(), getIdade(), nf.format(getSalario()));
     }
 
     @Override
