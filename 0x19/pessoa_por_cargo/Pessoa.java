@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Pessoa {
     private int codigo;
     private String nome;
@@ -35,6 +37,7 @@ public class Pessoa {
 
     @Override
     public String toString() {
+    	Locale.setDefault(new Locale("pt", "BR"));
         return String.format("[%d] %s %s %d R$ %f", getCodigo(),
             getNome(), getCargo(), getIdade(), getSalario());
     }
