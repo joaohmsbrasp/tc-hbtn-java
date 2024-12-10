@@ -1,3 +1,7 @@
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.util.Locale;
+
 public class Pessoa {
     private int codigo;
     private String nome;
@@ -35,7 +39,11 @@ public class Pessoa {
 
     @Override
     public String toString() {
-        return String.format("[%d] %s %s %d R$ %f", getCodigo(),
-            getNome(), getCargo(), getIdade(), getSalario());
-    }
-}
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols(new Locale("pt", "BR"));
+        symbols.setDecimalSeparator(',');
+        symbols.setGroupingSeparator('.');
+        DecimalFormat df = new DecimalFormat("#,##0.000000", symbols);
+
+        return String.format("[%d] %s %s %d R$ %s", getCodigo(),
+                getNome(), getCargo(), getIdade(), df.format(getSalario()));
+    }}
