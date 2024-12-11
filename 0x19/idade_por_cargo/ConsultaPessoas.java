@@ -10,7 +10,7 @@ public class ConsultaPessoas {
         return pessoas.stream()
             .collect(Collectors.groupingBy(
                 Pessoa::getCargo,
-                Collectors.mapping(Pessoa::getIdade, Collectors.toList())
+                Collectors.mapping(Pessoa::getIdade, Collectors.toList()) // Extração correta de idades
             ));
     }
 }
