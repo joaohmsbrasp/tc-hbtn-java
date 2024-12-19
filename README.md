@@ -15,4 +15,4 @@ Streams_Collectors_Optional: Java - Streams, Collectors e Optional (ID2581)
 TiposPrimitivos_Wrapper: Java - Tipos Primitivos e Wrappers (ID2572)  
 0x03: Java - Exceções (Parte II) (ID2510)  
 complexidade: Complexidade de Algoritmos em Java (ID3397)   
-
+List: Java - Collections (List) (ID2584)  
